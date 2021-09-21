@@ -1,0 +1,22 @@
+<html>
+<body>
+<div style="color:green;font-size:37px;">
+ <script language="JavaScript">
+var day1=prompt("Podaj dzien poczatkowy: ","");
+var day2=prompt("Podaj dzien koncowy:","");
+
+ var a=parseInt(day1);
+ var b=parseInt(day2);
+ 
+ if(a>0&&a<32&&b<32&&b>0&&b>a){
+    var days = b-a;
+    days=days*24*60*60;
+    document.write("ilosc sekund pomiedzy dniem "+a+" ,a dniem "+b+" stycznia to:  "+days+"<br>");
+ }else{
+     document.write("zle dane :)");
+ }
+ 
+ </script>
+</div>
+</body>
+</html
