@@ -1,0 +1,35 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij_Figura() 
+ {
+ window.close()
+ }
+ function WinOpen_Figura_obraz1() 
+ {
+window.open("obraz1.html","okienko1","toolbar=no,directories=no,menubar=no,height=400,width=400,top=600,left=50");
+ }
+ function WinOpen_Figura_obraz2() {
+window.open("obraz2.html","okienko2","toolbar=no,directories=no,menubar=no,height=400,width=400,top=600,left=475");
+ }
+ function WinOpen_Figura_obraz3() {
+window.open("obraz3.html","okienko3","toolbar=no,directories=no,menubar=no,height=400,width=400,top=600,left=900");
+ }
+ function WinOpen_Figura_obraz4() {
+window.open("obraz4.html","okienko4","toolbar=no,directories=no,menubar=no,height=400,width=400,top=600,left=1325");
+ }
+ </script>
+ </head>
+<body>
+ opis obrazka
+ <img src="gif1.gif" />
+ <form>
+    <input type="button" name="obraz1" value="Grafika 1" onclick="WinOpen_Figura_obraz1(' ')">
+    <input type="button" name="obraz2" value="Grafika 2" onclick="WinOpen_Figura_obraz2(' ')">
+    <input type="button" name="obraz3" value="Grafika 3" onclick="WinOpen_Figura_obraz3(' ')">
+    <input type="button" name="obraz4" value="Grafika 4" onclick="WinOpen_Figura_obraz4(' ')"><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Figura()"/>
+</form>
+</body>
+</html>
+
