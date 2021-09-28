@@ -1,0 +1,37 @@
+<html>
+<body>
+<div style="color:green;font-size:37px;">
+ <script language="JavaScript">
+var day1=prompt("Podaj dzien poczatkowy: ","");
+var d1=parseInt(day1);
+var hor1=prompt("Podaj godzine dnia "+d1+": ","");
+var h1=parseInt(hor1);
+var day2=prompt("Podaj dzien koncowy:","");
+var d2=parseInt(day2);
+var hor2=prompt("Podaj godzine dnia "+d2+": ","");
+var h2=parseInt(hor2);
+var czas;
+ 
+ if(d1>0&&d1<32&&d2<32&&d2>0&&d2>=d1){
+    if(h1<25&&h1>=0&&h2<25&&h2>=0){
+        if(d1==d2){
+        czas = h2- h1;
+        document.write("Czas pomiedzy to: "+czas);
+     }
+     czas=(d2-d1-2)*24;
+     czas=czas+(24-h1)+h2;
+     czas=czas*3600;
+     document.write("Od: "+d1+" godz: "+h1+"<br>"+"Do: "+d2+" godz: "+h2+"<br>");
+     document.write("Czas pomiedzy to: "+czas);
+    }else{
+        document.write("zla godzina");
+    }
+    
+ }else{
+     document.write("zle dzien :)");
+ }
+ 
+ </script>
+</div>
+</body>
+</html

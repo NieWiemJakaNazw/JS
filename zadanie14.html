@@ -1,0 +1,19 @@
+<html>
+<body>
+<div style="color:blue;font-size:37px;">
+ <script language="JavaScript">
+var n0_fig=prompt("Poda liczbe n0:","");
+var t_fig = prompt("Podaj liczbe lat:","");
+var t12_fig =prompt("Podaj liczbe T 1/2:","");
+var n0=parseInt(n0_fig);
+var t=parseInt(t_fig);
+var  t12=parseInt(t12_fig);
+var lambada = Math.log(2)/t12;
+var lam = lambada.toFixed(7);
+var nn = n0*(Math.pow((Math.E),(-lambada*t)));
+var n = nn.toFixed(7);
+document.write("N0 = "+n0+"[sztuk]<br>t = "+t+"[lat]<br>T1/2 = "+t12+"[lat]<br>Lambda = "+lam+"[1/rok]<br>"+"N = "+n+"[sztuk]");
+ </script>
+</div>
+</body>
+</html
