@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zad 22</title>
+</head>
+<body>
+    Odległość <input type="number" id="odleglosc"><br><br>
+    Droga <input type="number" id="droga"><br><br>
+    <button onclick="javascript: oblicz()">Oblicz</button>
+    <div id="kat"></div>
+    <div id="wys"></div>
+
+    <script>
+        function oblicz(){
+            var x_sklar = document.getElementById('odleglosc').value;
+            var y_sklar = document.getElementById('droga').value;
+
+            x_sklar = parseFloat(x_sklar);
+            y_sklar = parseFloat(y_sklar);
+
+            var wys = (y_sklar * y_sklar) - (x_sklar * x_sklar);
+            wys = Math.sqrt(wys);
+            var z_skalar = wys / x_sklar;
+            z_skalar = Math.atan(z_skalar);
+            var kat = z_skalar * 180 / 3.14;
+
+            kat = kat.toFixed(2);
+            wys = wys.toFixed(2);
+
+            document.getElementById('kat').innerText = 'Kąt wynosi ' + kat;
+            document.getElementById('wys').innerText = 'Wysokość wynosi ' + wys;
+        }
+    </script>
+</body>
+</html>
